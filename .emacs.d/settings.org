@@ -1,0 +1,33 @@
+* This is my attempt at organizing my emacs configuration
+So far, so good. Because this is not escaped it should serve for some kind of highly personal literate programming.
+** About packages and their locations
+When you M-x package-list-packages you get relative locations for the package files.
+They are (as is correct) found in ~/.emacs.d/elpa/
+But right now the only one I've installed is org, which is "shadowing a built-in package" (whatever that means)
+
+* Turn off menu bar
+This works.
+#+BEGIN_SRC emacs-lisp
+(menu-bar-mode -1)
+#+END_SRC
+
+* Unicode by default
+This works even if it might not be in the right place. 
+#+BEGIN_SRC emacs-lisp
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
+#+END_SRC
+
+* Wrap long lines by default
+I'm not sure I want to do this because it makes org mode tables too ugly. That's ok because it doesn't work anyways.
+#+BEGIN_SRC emacs-lisp
+(set-default 'truncate-lines nil)
+#+END_SRC
+
+* Let's learn about org-mode exporters since v 8.0
+
+https://orgmode.org/worg/exporters/ox-overview.html
+
+
+
+

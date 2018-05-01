@@ -1,0 +1,18 @@
+* This is my attempt at organizing my emacs configuration
+So far, so good. Because this is not escaped it should serve for some kind of highly personal literate programming.
+
+* Turn off menu bar
+#+BEGIN_SRC emacs-lisp
+(menu-bar-mode -1)
+#+END_SRC
+
+* Wrap long lines by default
+That was copied and pasted, I wonder why syntax highlighting did not work.
+(Because there was a syntax error - but the default switch didn't seem to work in any event, I wonder why.)
+#+BEGIN_SRC emacs-lisp
+;; this one came from "Visual Line Mode"
+(setq line-move-visual nil)
+(set-default 'truncate-lines t)
+#+END_SRC
+
+
