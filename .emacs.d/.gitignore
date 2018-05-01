@@ -1,4 +1,5 @@
 ## 2018-05-01 mjb I don't know where all these came from, maybe starter kit
+*.org~
 *.el~
 loaddefs.el*
 backups/*
