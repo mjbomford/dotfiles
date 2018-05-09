@@ -31,3 +31,7 @@
 (set-default-coding-systems 'utf-8)
 
 (set-default 'truncate-lines nil)
+
+(require 'org-ref)
+(setq reftex-default-bibliography "~/Dropbox/bibtex/agroecology.bib")
+(setq bibtex-completion-bibliography "~/Dropbox/bibtex/agroecology.bib")

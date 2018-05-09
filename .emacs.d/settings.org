@@ -63,3 +63,11 @@ https://orgmode.org/worg/exporters/ox-overview.html
 
 
 
+* References (well, org-ref)
+#+BEGIN_SRC emacs-lisp
+(require 'org-ref)
+(setq reftex-default-bibliography "~/Dropbox/bibtex/agroecology.bib")
+(setq bibtex-completion-bibliography "~/Dropbox/bibtex/agroecology.bib")
+
+#+END_SRC
+
