@@ -34,4 +34,17 @@
 
 (require 'org-ref)
 (setq reftex-default-bibliography "~/Dropbox/bibtex/agroecology.bib")
-(setq bibtex-completion-bibliography "~/Dropbox/bibtex/agroecology.bib")
+;; see org-ref for use of these variables
+(setq org-ref-bibliography-notes "~/Dropbox/bibtex/notes.org"
+      org-ref-default-bibliography '("~/Dropbox/bibtex/agroecology.bib")
+      org-ref-pdf-directory "~/Dropbox/bibtex/bibtex-pdfs/")
+
+
+(setq bibtex-completion-bibliography "~/Dropbox/bibtex/agroecology.bib"
+      bibtex-completion-library-path "~/Dropbox/bibtex/bibtex-pdfs"
+      bibtex-completion-notes-path "~/Dropbox/bibtex/notes.org")
+
+;; open pdf with system pdf viewer (works on mac)
+(setq bibtex-completion-pdf-open-function
+  (lambda (fpath)
+    (start-process "open" "*open*" "open" fpath)))
