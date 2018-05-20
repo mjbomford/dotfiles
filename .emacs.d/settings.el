@@ -1,4 +1,4 @@
-(menu-bar-mode -1)
+(menu-bar-mode t)
 
 (xterm-mouse-mode)
 (require 'mouse)

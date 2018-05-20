@@ -6,9 +6,9 @@ They are (as is correct) found in ~/.emacs.d/elpa/
 But right now the only one I've installed is org, which is "shadowing a built-in package" (whatever that means)
 
 * Turn off menu bar
-This works.
+This works. But turning off the menubar in the terminal turns is off in MacOS as well.
 #+BEGIN_SRC emacs-lisp
-(menu-bar-mode -1)
+(menu-bar-mode t)
 #+END_SRC
 
 * Turn on the mouse..
@@ -63,7 +63,12 @@ https://orgmode.org/worg/exporters/ox-overview.html
 
 
 
-* References (well, org-ref)
+* Citation Management Madness!
+
+** Org-ref stuff
+
+I got org-ref working with pandoc-citeproc but the exporters 
+
 #+BEGIN_SRC emacs-lisp
 (require 'org-ref)
 (setq reftex-default-bibliography "~/Dropbox/bibtex/agroecology.bib")
@@ -81,6 +86,5 @@ https://orgmode.org/worg/exporters/ox-overview.html
 (setq bibtex-completion-pdf-open-function
   (lambda (fpath)
     (start-process "open" "*open*" "open" fpath)))
-
 #+END_SRC
 

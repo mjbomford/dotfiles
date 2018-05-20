@@ -1,0 +1,6 @@
+(
+ (:id "sha1:0e022864e99681c21dfe92295db704598e11dcdd" :fingerprint "sha1:c2:0a:3f:b0:a5:d7:b0:4b:82:99:76:ad:0a:b1:81:93:cd:ff:e1:d5" :host "www.sciencedirect.com:443" :conditions (:insecure :unknown-ca :invalid))
+ (:id "sha1:2054c2d6d8be403662e1189363e97df53bdaf8d6" :fingerprint "sha1:12:54:97:a7:04:a8:cb:8c:d1:12:7f:48:e3:3d:c1:99:93:8b:40:8d" :host "linkinghub.elsevier.com:443" :conditions (:insecure :unknown-ca :invalid))
+ (:id "sha1:94d2871de2888c9ffba1fe9192961d71490944a7" :fingerprint "sha1:84:67:97:65:a7:d1:41:48:7e:d3:35:87:de:de:d9:11:29:07:55:b9" :host "doi.org:443" :conditions (:insecure :unknown-ca :invalid))
+ (:id "sha1:67a1d742b13d9418d25cc5cd239b16edbadf03ad" :fingerprint "sha1:b9:36:48:5d:a8:b3:6a:7a:d5:7f:fc:54:73:7d:db:53:0f:13:f2:de" :host "data.crossref.org:443" :conditions (:insecure :unknown-ca :invalid))
+)
